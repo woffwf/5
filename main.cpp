@@ -1,21 +1,25 @@
 #include <iostream>
 
+
+
 using namespace std;
 
 class Sneakers {
 private:
-    string brand_;
     int size_;
     string color_;
     string material_;
-    double price_;
     int quantity_;
     int numberOfSales_;
+    string brand_;
+    double price_;
+
+
 
 public:
     Sneakers() {}
     Sneakers(string brand, int size, string color, string material, double price,
-        int quantity, int numberOfSales) {
+                int quantity, int numberOfSales) {
         brand_ = brand;
         size_ = size;
         color_ = color;
@@ -95,11 +99,11 @@ public:
 
 int main() {
     SportShoesStore a = SportShoesStore();
-    a.assortment[0] = Sneakers("Nike", 40, "White", "Plastic", 1499.9, 300, 100);
-    a.assortment[1] = Sneakers("Abibas", 41, "Blue", "Plastic", 1399.9, 250, 99);
-    a.assortment[2] = Sneakers("Adidas", 45, "Black", "Plastic", 1999.9, 350, 101);
-    a.assortment[3] = Sneakers("Feele", 84, "White", "Plastic", 5999.9, 301, 150);
-    a.assortment[4] = Sneakers("Noike", 10, "Pink", "Metal", 3999.9, 199, 10);
+    a.assortment[0] = Sneakers("Nike", 36, "White", "Plastic", 2399.9, 310, 34);
+    a.assortment[1] = Sneakers("Bibi", 37, "Blue", "Plastic", 2499.9, 250, 99);
+    a.assortment[2] = Sneakers("Adidas", 43, "Black", "Plastic", 2999.9, 350, 55);
+    a.assortment[3] = Sneakers("Fop", 39, "White", "Plastic", 6999.9, 201, 150);
+    a.assortment[4] = Sneakers("Nirt", 38, "Pink", "Metal", 8999.9, 99, 10);
 
     a.priceSorting();
     a.numberOfSalesSorting();
